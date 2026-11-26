@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="了解 English Learning Bridge 访问的数据、Google Drive 授权、保存位置、数据保留与删除方式，以及本说明网站的第三方托管。">
+  <title>隐私政策 · English Learning Bridge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">ELB</span><span>English Learning Bridge<span class="brand-caption">个人英语学习归档工具</span></span></a>
+    <nav aria-label="主要导航">
+      <a href="index.html">应用介绍</a>
+      <a href="privacy.html" aria-current="page">隐私政策</a>
+      <a href="terms.html">使用条款</a>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <article class="document">
+    <header class="document-heading"><p class="eyebrow">PRIVACY POLICY</p><h1>隐私政策</h1><p class="document-meta">适用应用：English Learning Bridge<br>更新日期：2026 年 11 月 26 日</p></header>
+    <p class="document-intro">本政策说明个人 Windows 英语学习归档工具 English Learning Bridge 如何处理学习资料和 Google 数据，也说明这个公开介绍网站的用途。本政策只覆盖此归档工具，不替代 Google、ChatGPT、GitHub 或其他来源服务各自的隐私政策。</p>
+
+    <section><h2>处理哪些数据</h2><ul>
+      <li><strong>主动提供的学习内容：</strong>学习原文、用户练习、词汇复习数据、学习事件和报告。</li>
+      <li><strong>已授权的 Drive 文件：</strong>文件内容、版本及同步核验所需的文件元数据。</li>
+      <li><strong>授权账户信息：</strong>新授权验证时读取的 Drive 邮箱和账户权限标识，用于检查账户一致性。</li>
+      <li><strong>运行与诊断信息：</strong>同步阶段、错误码、事件标识、文件版本和内容哈希，用于查重、故障定位与恢复。</li>
+    </ul><p>程序只归档实际取得并被提供的内容；不会因为使用此工具而自动取得全部 ChatGPT 对话。</p></section>
+
+    <section><h2>为什么访问 Google Drive</h2><p>程序请求 <code>https://www.googleapis.com/auth/drive.file</code>，用于在授权范围内读取和更新学习文件、保存学习报告，以及核对写入结果。Google 数据用于账号持有人选择的个人学习归档与恢复功能。</p><p>此工具没有广告投放、出售学习记录或向其他用户共享学习主库的功能。数据访问范围以 Google 实际授予的权限为准。</p></section>
+
+    <section><h2>数据保存与凭据处理</h2><p>原始学习记录、待传队列及诊断信息保存在本人的 Windows 电脑；归档文件和学习报告保存在本人的 Google Drive。工具没有为其他用户提供集中保存学习资料的服务器。</p><p>Google 刷新凭据使用 Windows 当前用户的 DPAPI 加密保存在本地私有存储中。访问凭据用于进程中的 API 请求，不写入学习记录。诊断日志不记录授权码、访问凭据、刷新凭据或客户端密钥明文。</p><p>这些是工具采用的数据处理措施，不构成独立安全审计或安全认证声明。</p></section>
+
+    <section><h2>数据保留与删除</h2><p>历史学习事件、原文、备份及冲突原件默认保留，用于学习回顾、查重和恢复。上传失败不会自动删除待传数据。</p><p>账号持有人可以管理或删除本人电脑、Google Drive 和备份中的资料。若希望彻底移除资料，应先停止同步，再分别检查本地、云端和备份副本；删除某一处的文件不代表其他副本已经删除。</p><p>可以在 Google 账户的第三方连接设置中撤销应用授权。撤销会阻止后续访问，但不会自动删除已有的本地或 Drive 学习记录。</p></section>
+
+    <section><h2>公开网站与第三方服务</h2><p>本网站是由 GitHub Pages 托管的静态说明页，不提供账户注册、登录、学习资料上传或表单提交。页面没有嵌入广告、分析脚本或主动设置跟踪 Cookie 的代码。</p><p>托管方可能为提供网站服务而处理网络请求相关信息；这类处理由 GitHub 的政策约束。本网站的静态页面不会接收归档程序的学习文件或 Google 凭据。</p><p>使用 Google Drive、ChatGPT 或其他来源服务时，这些服务另按各自规则处理在其服务中提交或保存的数据。请参阅相关服务的政策：</p><ul class="policy-links">
+      <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a></li>
+      <li><a href="https://policies.google.com/privacy">Google 隐私政策</a></li>
+      <li><a href="https://openai.com/policies/privacy-policy/">OpenAI 隐私政策</a></li>
+    </ul></section>
+
+    <section><h2>政策更新与联系</h2><p>如应用的数据处理方式发生变化，本页面会更新，并标明更新日期。请勿通过联系邮件发送密码、验证码或 Google 授权凭据。</p><p>如有数据处理或删除方面的问题，请联系维护者：<a class="contact" href="mailto:lzb13600900000@gmail.com">lzb13600900000@gmail.com</a>。</p></section>
+  </article>
+</main>
+<footer class="site-footer">
+  <div><strong>English Learning Bridge</strong><p>个人使用的 Windows 英语学习归档工具。</p></div>
+  <div class="footer-links"><a href="index.html">应用介绍</a><a href="privacy.html">隐私政策</a><a href="terms.html">使用条款</a><a href="mailto:lzb13600900000@gmail.com">联系维护者</a></div>
+  <p class="footer-date">页面更新：2026 年 11 月 26 日</p>
+</footer>
+</body>
+</html>
